@@ -17,8 +17,8 @@
         }
 
         .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: flex;
+            flex-direction: column;
             gap: 15px;
             padding: 20px;
             max-width: 1200px;
@@ -27,6 +27,7 @@
 
         .gallery-item {
             position: relative;
+            width: 100%;
         }
 
         .gallery img {
@@ -92,7 +93,7 @@
     </style>
 </head>
 <body>
-    <h1>Interactive Gallery</h1>
+    <h1>My Gallery</h1>
     <div class="gallery">
         <div class="gallery-item">
             <a href="#lightbox1">
@@ -114,18 +115,9 @@
         </div>
         <div class="gallery-item">
             <a href="#lightbox3">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Beautiful_nature_scene.jpg" alt="Nature Scene">
-            </a>
-            <div id="lightbox3" class="lightbox">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Beautiful_nature_scene.jpg" alt="Nature Scene">
-            </div>
-            <div class="caption">Beautiful Nature Scene</div>
-        </div>
-        <div class="gallery-item">
-            <a href="#lightbox4">
                 <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="Lone Tree">
             </a>
-            <div id="lightbox4" class="lightbox">
+            <div id="lightbox3" class="lightbox">
                 <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="Lone Tree">
             </div>
             <div class="caption">Lone Tree at Sunset</div>
