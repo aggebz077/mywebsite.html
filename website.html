@@ -26,12 +26,21 @@
             display: inline-block;
             margin-top: 2rem;
             text-decoration: none;
-            color: #6200ea;
+            color: white;
+            background-color: #6200ea;
+            padding: 1rem 2rem;
+            border-radius: 30px;
             font-weight: bold;
             font-size: 1.2rem;
+            transition: background-color 0.3s, transform 0.3s;
         }
         a:hover {
-            text-decoration: underline;
+            background-color: #3700b3;
+            transform: translateY(-5px);
+        }
+        a:active {
+            background-color: #6200ea;
+            transform: translateY(0);
         }
     </style>
 </head>
@@ -40,6 +49,9 @@
         <h1>Welcome to Angjelo's Website</h1>
     </header>
     <p>Hello, my name is Angjelo, and this is my website.</p>
+    <!-- "Open My Texts" Link -->
     <a href="mytexts.html">Open My Texts</a>
+    <!-- "My Gallery" Link placed below the previous link -->
+    <a href="gallery.html">My Gallery</a>
 </body>
 </html>
